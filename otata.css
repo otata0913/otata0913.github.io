@@ -73,6 +73,7 @@ img.logotata {
 .contents-item a {
   color: black;
   transition: color 0.3s;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 .contents-item a:hover {
   color: green;
