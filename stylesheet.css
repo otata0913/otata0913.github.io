@@ -133,7 +133,7 @@ img.logotata {
   font-size: 95px;
   margin-top: 0px;
   margin-bottom: 40px;
-  font-family: 'M PLUS 1p', sans-serif;
+  ont-family: 'M PLUS 1p', sans-serif;
 }
 
 .copy-container h2{
@@ -146,16 +146,17 @@ img.logotata {
   background-color: rgba(0, 111, 188, 15);
   color: #fff;
   height: 260px;
-	width: 100%;
+  width: 100%;
 }
 
 .footer-logo {
   font-size: 70px;
   padding: 50px 70px;
   float: left;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   letter-spacing: 2px;
 }
+
 .footer-list {
   float: right;
   font-family: 'M PLUS Rounded 1c', sans-serif;
