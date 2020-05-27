@@ -9,11 +9,11 @@ li {
 }
 
 .header {
-  background-color: rgb(107,200,243);
+  background-color: rgb(86, 187, 241);
   color: #ffffff;
-  height: 90px;
+  height: 75px;
   font-family: 'Noto Sans JP', sans-serif;
-  width: auto;
+  width: 100%;
 }
 
 .body {
@@ -25,20 +25,13 @@ li {
   float: left;
 }
 
-img.otata3 {
-  height: 0px;
-  width: 0px;
-  padding: 0px;
-  margin: 0px;
-}
-
 .header-logo h2 {
   color: rgb(74, 74, 74);
-  margin: 20px;
-  margin-top: 21px;
-  margin-left: 10px;
-  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 33px;
   float: left;
+  font-family: 'M PLUS 1p', sans-serif;
 }
 
 img.logotata {
@@ -47,25 +40,31 @@ img.logotata {
   float: left;
   padding: 15px;
   padding-top: 19px;
-
 }
 
 .header-list {
-  float: right;
+  float: left;
   background-color: rgb(186, 227, 249);
-  height: 90px;
   font-family: 'M PLUS Rounded 1c', sans-serif;
+  padding: 12px;
+  width: 100%;
+  padding-right: 10px;
+  display: inline;
 }
 
 .header-list li {
   float: left;
-  padding: 20px;
-  font-size: 20px;
-  padding-top: 28px;
   color: black;
+  display: inline;
+  padding-right: 20px;
+  font-size: 20px;
 }
 .header-list li {
   transition: color 0.2s;
+  float: left;
+  display: inline;
+  padding-right: 20px;
+  padding-left: 13px;
 }
 .header-list li:hover {
   color: rgb(245, 162, 0);
@@ -77,6 +76,7 @@ img.logotata {
 
 .main {
   padding: 100px 80px;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 .section-title h3 {
@@ -93,8 +93,8 @@ img.logotata {
   width: 0;
   height: 0;
   border: none;
-  border-left: solid 15px transparent;
-  border-bottom: solid 15px rgb(119, 195, 223);
+  border-left: solid 17px transparent;
+  border-bottom: solid 17px rgb(119, 195, 223);
 }
 
 .section-title h3:after {
@@ -129,14 +129,14 @@ img.logotata {
   color: black;
 }
 
-.copy-container h1 {
+.title h1 {
   font-size: 95px;
   margin-top: 0px;
   margin-bottom: 40px;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'M PLUS 1p', sans-serif;
 }
 
-.copy-container h2{
+.title h2{
   font-size: 50px;
   margin-bottom: 30px;
   font-family: 'M PLUS 1p', sans-serif;
@@ -153,13 +153,12 @@ img.logotata {
   font-size: 70px;
   padding: 50px 70px;
   float: left;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
 }
-
 .footer-list {
   float: right;
-  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 .footer-list li {
   float: left;
