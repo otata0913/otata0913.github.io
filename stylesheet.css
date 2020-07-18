@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0px;
   margin: 0px;
@@ -11,7 +10,7 @@ li {
 .header {
   background-color: rgb(86, 187, 241);
   color: #ffffff;
-  height: 75px;
+  height: 120px;
   font-family: 'Noto Sans JP', sans-serif;
   width: 100%;
 }
@@ -27,9 +26,9 @@ li {
 
 .header-logo h2 {
   color: rgb(74, 74, 74);
-  margin-top: 20px;
-  margin-left: 20px;
-  font-size: 33px;
+  margin-top: 37px;
+  margin-left: 50px;
+  font-size: 40px;
   float: left;
   font-family: 'M PLUS 1p', sans-serif;
 }
@@ -43,29 +42,24 @@ img.logotata {
 }
 
 .header-list {
-  float: left;
   background-color: rgb(186, 227, 249);
   font-family: 'M PLUS Rounded 1c', sans-serif;
   padding: 12px;
-  width: 100%;
   padding-right: 10px;
-  display: inline;
+  height: 40px;
 }
 
 .header-list li {
   float: left;
   color: black;
-  display: inline;
   padding-right: 20px;
   font-size: 20px;
-}
-.header-list li {
   transition: color 0.2s;
   float: left;
-  display: inline;
   padding-right: 20px;
   padding-left: 13px;
 }
+
 .header-list li:hover {
   color: rgb(245, 162, 0);
 }
