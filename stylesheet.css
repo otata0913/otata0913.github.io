@@ -10,8 +10,7 @@ li {
 .header {
   background-color: rgb(86, 187, 241);
   color: #ffffff;
-  height: 120px;
-  font-family: 'Noto Sans JP', sans-serif;
+  height: 165px;
   width: 100%;
 }
 
@@ -25,12 +24,12 @@ li {
 }
 
 .header-logo h2 {
-  color: rgb(74, 74, 74);
-  margin-top: 37px;
+  color: rgb(70, 70, 70);
+  margin-top: 50px;
   margin-left: 50px;
-  font-size: 40px;
+  font-size: 55px;
   float: left;
-  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Sawarabi Gothic', sans-serif;
 }
 
 img.logotata {
@@ -43,21 +42,19 @@ img.logotata {
 
 .header-list {
   background-color: rgb(186, 227, 249);
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-  padding: 12px;
   padding-right: 10px;
-  height: 40px;
+  height: 75px;
 }
 
 .header-list li {
   float: left;
   color: black;
   padding-right: 20px;
-  font-size: 20px;
+  font-size: 25px;
   transition: color 0.2s;
   float: left;
   padding-right: 20px;
-  padding-left: 13px;
+  padding-top: 20px;
 }
 
 .header-list li:hover {
@@ -68,17 +65,23 @@ img.logotata {
   background-color: rgb(186, 227, 249);
 }
 
-.main {
-  padding: 100px 80px;
-  font-family: 'Sawarabi Gothic', sans-serif;
+.leftlist {
+  margin-left: 50px;
+}
+
+.main{
+  padding-left: 80px;
+  padding-right: 80px;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .section-title h3 {
-  font-family: 'M PLUS Rounded 1c', sans-serif;
   position: relative;
   padding-left: 25px;
+  padding-bottom:
+  font-family: 'Noto Sans JP', sans-serif;
 }
- 
+
 .section-title h3:before {
   position: absolute;
   content: '';
@@ -114,26 +117,33 @@ img.logotata {
 .contents-item a {
   color: rgb(0, 0, 0);
   transition: color 0.3s;
+  font-family: 'Noto Sans JP', sans-serif;
 }
+
 .contents-item a:hover {
   color: rgb(151, 206, 162);
 }
+
 .contents {
-  height: 500px;
   color: black;
 }
 
 .title h1 {
   font-size: 95px;
+  padding-top: 100px;
   margin-top: 0px;
   margin-bottom: 40px;
-  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .title h2{
   font-size: 50px;
   margin-bottom: 30px;
-  font-family: 'M PLUS 1p', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.kuhaku {
+  height: 800px;
 }
 
 .footer {
@@ -141,13 +151,13 @@ img.logotata {
   color: #fff;
   height: 260px;
   width: 100%;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .footer-logo {
   font-size: 70px;
   padding: 50px 70px;
   float: left;
-  font-family: 'Montserrat', sans-serif;
   letter-spacing: 2px;
 }
 .footer-list {
@@ -159,9 +169,11 @@ img.logotata {
   padding-top: 90px;
   padding-right: 45px;
   font-size: 22px;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 .footer-list li a {
   color: white;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .list:hover{
