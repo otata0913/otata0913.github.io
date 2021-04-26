@@ -20,13 +20,18 @@ a {
   font-size: 45px;
   float: left;
   display: inline-block;
-  font-family: 'ProductSans';
+  font-family: 'SF-Pro-Display-Medium';
 }
 
 .head-list {
   float: right;
   margin-right: 20px;
-  font-family: "HiraginoW4";
+  font-family: "HiraginoW3";
+}
+
+.ei {
+  margin-top: 20px;
+  font-family: "SF-Pro-Text-Regular";
 }
 
 .head-list li{
@@ -75,14 +80,14 @@ a {
 .main h1{
   margin-top: 60px;
   font-size: 70px;
-  font-family: 'HiraginoW5';
+  font-family: 'HiraginoW6';
 }
 
 .main h2{
   margin-bottom: 50px;
   margin-top: 35px;
   font-size: 30px;
-  font-family: 'HiraginoW2', 'Noto Sans JP';
+  font-family: 'HiraginoW3', 'Noto Sans JP';
 }
 
 .main p{
@@ -134,7 +139,7 @@ img {
 
 .text {
   font-size: 27px;
-  font-family: 'corporatem';
+  font-family: 'HiraginoW3';
   color: black;
 }
 
@@ -150,7 +155,7 @@ footer{
 .footer-list {
   float: left;
   margin-left: 20px;
-  font-family: "HiraginoW4";
+  font-family: "HiraginoW3";
   transition: 0.4s;
 }
 
@@ -194,5 +199,5 @@ footer a:hover::after {
   background: #e8e8e8;
   text-align: center;
   font-size: 20px;
-  font-family: 'sfmono';
+  font-family: 'SF-Mono-Regular';
 }
