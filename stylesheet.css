@@ -26,7 +26,7 @@ a {
 .head-list {
   float: right;
   margin-right: 20px;
-  font-family: "HiraginoW3";
+  font-family: "ヒラギノ角ゴ W3 JIS2004";
 }
 
 .ei {
@@ -87,13 +87,13 @@ a {
   margin-bottom: 50px;
   margin-top: 35px;
   font-size: 30px;
-  font-family: 'HiraginoW3', 'Noto Sans JP';
+  font-family: "ヒラギノ角ゴ W3 JIS2004";
 }
 
 .main p{
   display: inline;
   font-size: 20px;
-  font-family: "HiraginoW3";
+  font-family: "ヒラギノ角ゴ W3 JIS2004";
 }
 
 #konyu {
@@ -102,7 +102,7 @@ a {
   padding: 20px;
   background-color: #ADD8E6;
   transition: 0.4s;
-  font-family: "HiraginoW3";
+  font-family: "ヒラギノ角ゴ W3 JIS2004";
 }
 
 #konyu:hover{
@@ -117,7 +117,7 @@ a {
 .dan h2{
   font-size: 35px;
   border-bottom: 3px solid #c1666b;
-  font-family: "HiraginoW3";
+  font-family: "ヒラギノ角ゴ W3 JIS2004";
 }
 
 img {
@@ -139,7 +139,7 @@ img {
 
 .text {
   font-size: 27px;
-  font-family: 'HiraginoW3';
+  font-family: "ヒラギノ角ゴ W3 JIS2004";
   color: black;
 }
 
@@ -155,7 +155,7 @@ footer{
 .footer-list {
   float: left;
   margin-left: 20px;
-  font-family: "HiraginoW3";
+  font-family: "ヒラギノ角ゴ W3 JIS2004";
   transition: 0.4s;
 }
 
