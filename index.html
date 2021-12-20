@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+   <meta charset="utf-8">
+   <title>おたたページ</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+   <script>
+   $(function() {
+      const hum = $('#hamburger, .close')
+      const nav = $('.sp-nav')
+      hum.on('click', function(){
+         nav.toggleClass('toggle');
+      });
+   });
+   </script>
+</head>
+<body>
+   <header>
+      <h1 id="logo">
+         <a href="/">おたた</a>
+      </h1>
+         <nav class="pc-nav">
+            <ul>
+               <li><a href="#">LINEスタンプ</a></li>
+               <li><a href="#">Googleサイト</a></li>
+            </ul>
+         </nav>
+         <nav class="sp-nav">
+            <ul>
+               <li><a href="#">LINEスタンプ</a></li>
+               <li><a href="#">Googleサイト</a></li>
+               <li class="close"><span>閉じる</span></li>
+            </ul>
+         </nav>
+      <div id="hamburger">
+         <span></span>
+      </div>
+   </header>
+</body>
+</html>
