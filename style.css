@@ -19,7 +19,7 @@ li {
   display: flex;
   height: 74px;
   justify-content: space-between;
-  padding: 0 120px;
+  padding: 0 35px;
 }
 .nav-list {
   /* navの横並び */
@@ -27,7 +27,7 @@ li {
 }
 .nav-item {
   /* メニューの右側に余白 */
-  margin-right: 55px;
+  margin-left: 55px;
 }
 
 .burger-btn {
@@ -125,11 +125,11 @@ li {
   }
   .nav-list {
     display: block;
-    left: 50%;
+    left: 20%;
     position: absolute;
-    text-align: center;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    text-align: left;
+    top: 30%;
+
   }
   .nav-item {
     margin-bottom: 40px;
@@ -150,4 +150,17 @@ li {
 header a{
   color: white;
   text-decoration: none;
+}
+
+main {
+  margin: 0px 43px;
+}
+
+.title {
+  width: 50%;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,94,247,1) 17.8%, rgba(2,245,255,1) 100.2% );;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 30px;
+  margin: 50px 10px;
 }
