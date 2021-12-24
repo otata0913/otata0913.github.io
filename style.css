@@ -3,6 +3,39 @@
   padding: 0px;
 }
 
+/* 👇 ここからポインター制御 👇 */
+	
+body {
+  position: relative;
+  cursor: none;
+}
+ 
+.cursor,
+.follower {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0; 
+  cursor: none;
+  posinter-events: none;
+}
+ 
+.cursor {
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  z-index: 1001;
+}
+ 
+.follower {
+  width: 40px;
+  height: 40px;
+  background-color: #fdfe00;
+  z-indes: 1000;
+}
+ 
+/* 👆 ここまでポインター制御 👆 */
+
 /* 👇 ここからstyle.css 👇 */
 
 li {
@@ -118,7 +151,7 @@ li {
   }
   
   .header-nav {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(245 245 245);
     height: 100%;
     width: 100%;
     z-index: 2;
@@ -128,7 +161,7 @@ li {
     display: block;
     left: 50%;
     position: absolute;
-    text-align: left;
+    text-align: center;
     top: 50%;
     transform: translate(-50%,-50%);
   }
@@ -173,6 +206,54 @@ main {
   font-weight: 600;
   margin: 50px 10px;
 }
+
+/* 購入する ボタン 👇 ここから */
+.stamp p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+  padding: 1em 2em;
+  width: 300px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #ccc;
+  transition: 0.3s;
+}
+
+.stamp p::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border: 2px solid #3d9ec8;
+  transition: 0.2s;
+}
+
+.stamp p::after {
+  content: '<i class="fab fa-line"></i>';
+  /* width: 5px;
+  height: 5px;
+  border-top: 3px solid #333333;
+  border-right: 3px solid #333333; */
+  transform: rotate(45deg);
+}
+
+.stamp p:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.stamp p:hover {
+  text-decoration: none;
+  background-color: #a0c4d3;
+}
+/* 購入する ボタン 👆 ここまで */
+
 @media screen and (max-width:768px) {
   .site-title {
     font-size: 20px;
