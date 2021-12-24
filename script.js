@@ -19,7 +19,7 @@ posY = 0; //フォロワーのX座標
 
 //カーソルの遅延アニメーション
 //ほんの少ーーーしだけ遅延させる 0.001秒
-TweenMax.to({}, .001, {
+TweenMax.to({}, .01, {
   repeat: -1,
   onRepeat: function() {
     posX += (mouseX - posX) / delay;
