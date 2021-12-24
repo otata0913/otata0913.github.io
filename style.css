@@ -158,10 +158,19 @@ main {
 
 .title {
   width: 50%;
+  /* Safari */
   background: linear-gradient( to right,  rgba(69,179,224,1) 25%, rgba(102,51,153,1) 75% );
+  background: -moz-linear-gradient( to right,  rgba(69,179,224,1) 25%, rgba(102,51,153,1) 75% );
+  background: -webkit-linear-gradient( to right,  rgba(69,179,224,1) 25%, rgba(102,51,153,1) 75% );
+  background: linear-gradient( to right,  rgba(69,179,224,1) 25%, rgba(102,51,153,1) 75% );
+  -moz-background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
-  font-size: 30px;
+  background-clip: text;
+  -moz-text-fill-color: rgba(255,255,255,0);
+  -webkit-text-fill-color: rgba(255,255,255,0);
+  font-size: 60px;
+  font-family: sans-serif;
+  font-weight: 600;
   margin: 50px 10px;
 }
 @media screen and (max-width:768px) {
