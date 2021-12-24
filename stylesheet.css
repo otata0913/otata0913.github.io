@@ -1,168 +1,133 @@
-@charset "utf-8";
 * {
-   box-sizing: border-box;
-   padding: 0px;
-   margin: 0px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-body {
-   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
-   background-color: #d6d6d6;
-   letter-spacing : 0.2em;
+::before , ::after {
+	box-sizing: inherit;
 }
-header {
-   position: fixed;
-   top: 0;
-   width: 100%;
-   background-color: black;
-   display: flex;
-   align-items: center;
-   height: 80px;
+button {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	border-radius: 0;
+	background: transparent;
+	color: inherit;
+	vertical-align: middle;
+	text-align: inherit;
+	font: inherit;
+	-webkit-appearance: none;
+	appearance: none;
 }
-
-#logo {
-   font-size: 45px;
-   padding: 0px 0px 0px 20px;
-   margin-top: 0px !important;
+/**************** 以下、ハンバーガーボタンのスタイリング ****************/
+.btn {
+	/* ボタンの配置位置  */
+	position: fixed;
+	top: 32px;
+	right: 16px;
+	/* 最前面に */
+	z-index: 10;
+	/* ボタンの大きさ  */
+	width: 48px;
+	height: 48px;
 }
-
-#logo a{
-   margin: 0; padding: 0;
-   font-size: 25px;
+/***** 真ん中のバーガー線 *****/
+.btn-line {
+	display: block;
+	/* バーガー線の位置基準として設定 */
+	position: relative;
+	/* 線の長さと高さ */
+	width: 100%;
+	height: 4px;
+	/* バーガー線の色 */
+	background-color: #d6d5d5;
+	transition: .2s;
 }
-a {	
-   text-decoration: none;
-   color: #fff;
+/***** 上下のバーガー線 *****/
+.btn-line::before , .btn-line::after {
+	content: "";
+	/* 基準線と同じ大きさと色 */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #d6d5d5;
+	transition: .5s;
 }
-nav {
-   margin: 0 0 0 auto;
+.btn-line::before {
+	/* 上の線の位置 */
+	transform: translateY(-16px);
 }
-.pc-nav ul {
-   list-style: none;
-   margin: 0;
-   display: flex;
+.btn-line::after {
+	/* 下の線の位置 */
+	transform: translateY(16px);
 }
-.pc-nav li {
-   margin: 0 0 0 15px;
-   font-size: 14px;
+/***** メニューオープン時 *****/
+.btn-line.open {
+	/* 真ん中の線を透明に */
+	background-color: transparent;
 }
-
-.sp-nav {
-   display: none;
+.btn-line.open::before , .btn-line.open::after {
+	content: "";
+	background-color: #333;
+	transition: .2s;
 }
-
-@media screen and (max-width: 640px) {
-   .pc-nav {
-      display: none;
-   }
-   .sp-nav {
-      z-index: 1;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      display: block;
-      width: 100%;
-      background: rgba(0, 0, 0, .8);
-      opacity: 0;
-      transform: translateY(-100%);
-      transition: all .2s ease-in-out;
-   }
-   #hamburger {
-      position: relative;
-      display: block;
-      width: 30px;
-      height: 25px;
-      margin: 0 0 0 auto;
-   }
-   #hamburger span {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      display: block;
-      width: 100%;
-      height: 2px;
-      background-color: #fff;
-      transform: translateY(-50%);
-   }
-   #hamburger::before {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: #fff;
-   }
-   #hamburger::after {
-      content: '';
-      display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 70%;
-      height: 2px;
-      background-color: #fff;
-   }
-   /*スマホメニュー*/
-   .sp-nav ul {
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-   }
-   .sp-nav li {
-      text-decoration: none;
-      margin: 0;
-      padding: 0;
-   }
-   .sp-nav li span {
-      font-size: 15px;
-      color: #fff;
-   }
-   .sp-nav li a, .sp-nav li span {
-      display: block;
-      padding: 20px 0;
-   }
-   /*-閉じるアイコンー*/
-   .sp-nav .close {
-      position: relative;
-      padding-left: 20px;
-   }
-   .sp-nav .close::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      display: block;
-      width: 16px;
-      height: 1px;
-      background: #fff;
-      transform: rotate( 45deg );
-   }
-   .sp-nav .close::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 0;
-      display: block;
-      width: 16px;
-      height: 1px;
-      background: #fff;
-      transform: rotate( -45deg );
-   }
-   .toggle {
-      transform: translateY( 0 );
-      opacity: 1;
-   }
-   .main-visual {
-      padding: 0 4%;
-   }
-   h2 {
-      line-height: 1.6;
-      text-align: center;
-   }
+.btn-line.open::before {
+	/* 上の線を傾ける */
+	transform: rotate(45deg);
 }
+.btn-line.open::after {
+	/* 上の線を傾ける */
+	transform: rotate(-45deg);
+}
+/**************** ここまで、ハンバーガーボタンのスタイリング ****************/
+/**************** 以下、メニューのスタイリング ****************/
+.menu {
+	/* メニューを縦に */
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	/* メニューの位置マイナス指定で画面外に */
+	right: -70%;
+	width: 70%;
+	height: 100vh;
+	background-color: rgba(167, 148, 58, .7);
+	color: #efefef;
+	transition: .3s;
+}
+.menu-list {
+	/* メニューテキスト位置をリスト内中心に */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+.menu-list:hover {
+	background-color: rgba(255, 255, 255, .5);
+	color: #333;
+	cursor: pointer;
+	transition: .3s;
+}
+/***** メニューオープン時位置0にして画面内に *****/
+.menu.open {
+	position: absolute;
+	right: 0;
+}
+/* 600px以上はハンバーガーボタン非表示、ヘッダー固定 */
+@media screen and (min-width: 600px) {
+	.btn {
+		display: none;
+	}
+	.menu {
+		/* メニューを横に */
+		display: flex;
+		flex-direction: row;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100px;
+	}
+}
+/**************** ここまで、メニューのスタイリング ****************/
