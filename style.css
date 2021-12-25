@@ -126,6 +126,7 @@ body {
 }
 /* 👆 ここまでポインター制御 👆 */
 
+
 /* 👇 ここからstyle.css 👇 */
 
 li {
@@ -280,6 +281,7 @@ main {
 }
 
 .title {
+  font-family:"ヒラギノ角ゴ W6 JIS2004"
   width: 50%;
   /* Safari */
   background: linear-gradient( to right,  rgba(69,179,224,1) 25%, rgba(102,51,153,1) 75% );
@@ -299,6 +301,7 @@ main {
 
 /* 購入する ボタン 👇 ここから */
 .stamp p {
+  font-family:"ヒラギノ角ゴ W6 JIS2004"
   display: flex;
   justify-content: space-between;
   align-items: center;
