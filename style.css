@@ -136,6 +136,7 @@ li {
 /* header */
 
 .header {
+  font-family: "Hiragino Kaku Gothic W6 JIS2004";
   align-items: center;
   background-color: white;
   border-bottom: 1px solid #fff;
@@ -248,7 +249,7 @@ li {
     z-index: 2;
   }
   .nav-list {
-    font-family:"ヒラギノ角ゴ W6 JIS2004", "Hiragino Kaku Gothic W6 JIS2004";
+    font-family: "Hiragino Kaku Gothic W6 JIS2004";
     font-size: 22px;
     display: block;
     left: 30%;
@@ -259,7 +260,6 @@ li {
     transform: translate(-50%,-50%);
   }
   .nav-item {
-
     margin-right: 0;
   }
 
@@ -272,7 +272,7 @@ li {
 
 .site-title {
   font-size: 26px;
-  font-family:"ヒラギノ角ゴ W6 JIS2004", "Hiragino Kaku Gothic W6 JIS2004";
+  font-family: "Hiragino Kaku Gothic W6 JIS2004";
 }
 header a{
   color: black;
@@ -284,7 +284,7 @@ main {
 }
 
 .title {
-  font-family:"ヒラギノ角ゴ W6 JIS2004", "Hiragino Kaku Gothic W6 JIS2004";
+  font-family: "Hiragino Kaku Gothic W6 JIS2004";
   width: 50%;
   /* Safari */
   background: linear-gradient( to right,  rgba(69,179,224,1) 25%, rgba(102,51,153,1) 75% );
@@ -297,7 +297,7 @@ main {
   -moz-text-fill-color: rgba(255,255,255,0);
   -webkit-text-fill-color: rgba(255,255,255,0);
   font-size: 60px;
-  margin: 50px 10px;
+  margin: 50px 0px;
 }
 
 /* 購入する ボタン 👇 ここから */
