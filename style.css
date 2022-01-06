@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  text-decoration: none;
 }
 
 /* 👇 ここからポインター制御 👇 */
@@ -353,14 +354,17 @@ main {
   background-color: #a0c4d3;
 }
 
-.stamp p {
-
-}
-
 /* 購入する ボタン 👆 ここまで */
 
 
 @media screen and (max-width:768px) {
+  img.image {
+    width: 120px;
+    height: 120px;
+  }
+  .sticker p {
+    font-size: 13px;
+  }
   .cursor {
     display: none;
   }
@@ -379,12 +383,14 @@ main {
   }
   /* 購入する ボタン 👇 ここから */
   .stamp p {
-    width: 10em;
-    color: #333;
+    width: 40%;
+
     font-size: 15px;
   }
   /* 購入する ボタン 👆 ここまで */
 }
+
+
 
 .dan h1 {
   position: relative;
