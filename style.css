@@ -249,6 +249,7 @@ li {
     z-index: 2;
   }
   .nav-list {
+    width: 100%;
     font-family: "Hiragino Kaku Gothic W6 JIS2004";
     font-size: 22px;
     display: block;
@@ -257,6 +258,7 @@ li {
     text-align: left;
     top: 50%;
     transform: translate(-50%,-50%);
+    padding-left: 43px;
   }
   .nav-item {
     padding: 30px;
@@ -299,6 +301,10 @@ main {
   margin: 50px 0px;
 }
 
+.space {
+  height: 50px;
+}
+
 /* 購入する ボタン 👇 ここから */
 .stamp p {
   font-family: "Hiragino Kaku Gothic W6 JIS2004";
@@ -309,10 +315,9 @@ main {
   margin: 0px;
   padding: 1em 2em;
   width: 300px;
-  color: #333;
-  font-size: 18px;
+  color: black;
+  font-size: 20px;
   font-weight: 700;
-  background-color: #ccc;
   transition: 0.3s;
 }
 
@@ -347,6 +352,11 @@ main {
   text-decoration: none;
   background-color: #a0c4d3;
 }
+
+.stamp p {
+
+}
+
 /* 購入する ボタン 👆 ここまで */
 
 
@@ -374,4 +384,35 @@ main {
     font-size: 15px;
   }
   /* 購入する ボタン 👆 ここまで */
+}
+
+.dan h1 {
+  position: relative;
+  padding: 0.25em 0;
+  font-family: "Hiragino Kaku Gothic W6 JIS2004";
+  font-size: 30px;
+}
+
+.dan h1::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: -webkit-linear-gradient( to right,  rgba(69,179,224,1) 25%, rgba(102,51,153,1) 75% );
+  background: linear-gradient( to right,  rgba(69,179,224,1) 25%, rgba(102,51,153,1) 75% );
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  grid-gap: 30px;
+}
+
+.aaa {
+  padding: 20px;
+}
+
+.sticker p {
+  margin-left: 50px;
+  font-size: 17px;
+  letter-spacing: 0.04em;
 }
