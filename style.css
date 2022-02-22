@@ -303,7 +303,7 @@ main {
 }
 
 .space {
-  height: 50px;
+  height: 80px;
 }
 
 /* 購入する ボタン 👇 ここから */
@@ -314,6 +314,7 @@ main {
   align-items: center;
   position: relative;
   margin: 0px;
+  margin-left: 20px;
   padding: 1em 2em;
   width: 300px;
   color: black;
@@ -358,6 +359,10 @@ main {
 
 
 @media screen and (max-width:768px) {
+  .sticker {
+    width: 150px;
+    height: 150px;
+  }
   img.image {
     width: 120px;
     height: 120px;
@@ -384,7 +389,6 @@ main {
   /* 購入する ボタン 👇 ここから */
   .stamp p {
     width: 40%;
-
     font-size: 15px;
   }
   /* 購入する ボタン 👆 ここまで */
@@ -417,8 +421,18 @@ main {
   padding: 20px;
 }
 
+.sticker {
+  width: 250px;
+}
+
 .sticker p {
   margin-left: 50px;
   font-size: 17px;
   letter-spacing: 0.04em;
+}
+
+.tamaji {
+  display: block;
+  margin-top: 40px;
+  margin-left: 20px;
 }
